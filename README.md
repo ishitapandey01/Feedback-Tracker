@@ -1,55 +1,79 @@
-Feedback Tracker
-Core Functionality
+# Feedback Tracker
 
-Feedback Management: Create, view, edit, and delete feedback entries
-Real-time Updates: Instant UI updates without page refreshes
-Categorization: Organize feedback by categories (Bug Report, Feature Request, General)
-Priority Levels: Set and filter by priority (Low, Medium, High)
-Status Tracking: Track feedback status (Open, In Progress, Resolved)
+A full-stack application for collecting, managing, and analyzing user feedback with optional AI-powered suggestions.
 
-Tech Stack
-Frontend
+## Core Functionality
 
-React 18 with functional components and hooks
-Tailwind CSS for styling
-Lucide React for icons
-Fetch API for HTTP requests
+- **Feedback Management:** Create, view, edit, and delete feedback entries
+- **Real-time Updates:** Instant UI updates without page refreshes
+- **Categorization:** Organize feedback by categories (Bug Report, Feature Request, General)
+- **Priority Levels:** Set and filter by priority (Low, Medium, High)
+- **Status Tracking:** Track feedback status (Open, In Progress, Resolved)
 
-Backend
+## Tech Stack
 
-Node.js with Express.js
-OpenAI API integration
-CORS enabled for cross-origin requests
-JSON file-based storage (easily replaceable with database)
+### Frontend
 
-Setup Instructions
-Prerequisites
+- React 18 with functional components and hooks
+- Tailwind CSS for styling
+- Lucide React for icons
+- Fetch API for HTTP requests
 
-Node.js (v16 or higher)
-npm or yarn
-OpenAI API key
+### Backend
 
-1. Clone the Repository
-bashgit clone [your-repo-url]
+- Node.js with Express.js
+- OpenAI API integration
+- CORS enabled for cross-origin requests
+- JSON file-based storage (easily replaceable with a database)
+
+## Setup Instructions
+
+### Prerequisites
+
+- Node.js (v16 or higher)
+- npm or yarn
+- OpenAI API key
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/ishitapandey01/Feedback-Tracker.git
 cd feedback-tracker
-
-2. Backend Setup
-bashcd backend
+Backend Setup
+bash
+Copy
+Edit
+cd backend
 npm install
 Create a .env file in the backend directory:
-envOPENAI_API_KEY=your_openai_api_key_here
+
+ini
+Copy
+Edit
+OPENAI_API_KEY=your_openai_api_key_here
 PORT=5000
-
-3. Frontend Setup
-bashcd ../frontend
+Frontend Setup
+bash
+Copy
+Edit
+cd ../frontend
 npm install
-
-4. Running the Application
+Running the Application
 Start the Backend (Terminal 1)
-bashcd backend
+bash
+Copy
+Edit
+cd backend
 npm start
-The backend will run on http://localhost:5000
+The backend will run at:
+http://localhost:5000
+
 Start the Frontend (Terminal 2)
-bashcd frontend
+bash
+Copy
+Edit
+cd frontend
 npm start
-The frontend will run on http://localhost:3000
+The frontend will run at:
+http://localhost:3000
+
