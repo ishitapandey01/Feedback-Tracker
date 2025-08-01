@@ -40,29 +40,22 @@ A full-stack application for collecting, managing, and analyzing user feedback w
 git clone https://github.com/ishitapandey01/Feedback-Tracker.git
 cd feedback-tracker
 Backend Setup
-bash
-Copy
-Edit
+
+
 cd backend
 npm install
 Create a .env file in the backend directory:
 
-ini
-Copy
-Edit
+
 OPENAI_API_KEY=your_openai_api_key_here
 PORT=5000
 Frontend Setup
-bash
-Copy
-Edit
+
 cd ../frontend
 npm install
 Running the Application
 Start the Backend (Terminal 1)
-bash
-Copy
-Edit
+
 cd backend
 npm start
 The backend will run at:
